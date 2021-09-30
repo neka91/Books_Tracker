@@ -1,13 +1,189 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Roboto, sans-serif;
+  background-color: blanchedalmond;
+}
+
+.header {
+  background-color: #ff6666;
+}
+
+.header__item_logo {
+  margin-top: 30px;
+  margin-left: 40px;
+  border-radius: 10px;
+  width: 150px;
+  height: 100px;
+  box-shadow: 7px 7px 12px black;
+}
+
+.header__item,
+.header__nav,
+.bookslist__item_list_items {
+  display: flex;
+  align-items: center;
+}
+
+.header__item,
+.bookslist__item_list_items {
+  justify-content: space-between;
+}
+
+.header__nav {
+  justify-content: right;
+}
+
+.header__item_title,
+.header__nav_link,
+.form__item_text,
+.bookslist__item_text {
+  margin: 10px;
+  padding: 10px;
+}
+
+.bookslist__item_text {
+  margin-bottom: 0px;
+}
+
+.header__item_title {
+  font-style: italic;
+  text-shadow: 4px 4px 6px #000000;
+  color: beige;
+}
+
+.header__nav_link {
+  text-decoration: none;
+  color: beige;
+}
+
+.header__nav_link.active {
+  font-weight: bold;
+  color: white;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePicture {
+  margin: 50px;
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 7px 7px 12px black, 12px 12px 10px white;
+}
+
+.wrapper {
+  min-height: calc(100vh - 350px);
+}
+
+.wrapper,
+.footer {
+  text-align: center;
+}
+
+.form__item_button,
+.bookslist__item_button,
+.bookslist__item_list_button,
+.footer__button {
+  margin: 20px;
+  padding: 4px;
+  width: 70px;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.form__item_button,
+.bookslist__item_button,
+.bookslist__item_list_button,
+.footer__button:hover {
+  cursor: pointer;
+}
+
+.form__item_button {
+  background-color: #006600;
+  color: beige;
+}
+
+.bookslist__item_button {
+  background-color: #909090;
+  color: black;
+}
+
+.bookslist__item_list_button {
+  background-color: #cc3333;
+  color: beige;
+}
+
+.form__item_title,
+.bookslist__item_title {
+  padding-top: 30px;
+}
+
+.form__item_text,
+.bookslist__item_text {
+  width: 400px;
+}
+
+.form__item_paragraph {
+  color: #000099;
+}
+
+.bookslist__item_list {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 70%;
+  text-align: left;
+  box-shadow: 5px 2px 8px 10px #888888;
+}
+
+.bookslist__item_list_items {
+  margin: 10px;
+  padding: 3px;
+  padding-left: 20px;
+  border: 1px solid black;
+  line-height: 1.5em;
+}
+
+.bookslist__item_list_items_info {
+  width: 90%;
+}
+
+.bookslist__item_paragraph {
+  margin-top: 25px;
+  font-size: 1.5em;
+}
+
+.footer {
+  color: beige;
+}
+
+.footer__button {
+  background-color: #666666;
+}
+
+.footer__item {
+  padding: 20px;
+  height: 100px;
+  background-color: #333333;
+}
+
+.footer__item_title {
+  margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+  .home {
+    flex-direction: column;
+  }
 }
